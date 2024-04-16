@@ -1,0 +1,225 @@
+* {
+    font-family: Arial, sans-seif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scale: 1.5;
+    padding: 40px 20px;
+    width: fit-content;
+    border-radius: 30px;
+    border: 2px solid var(--accent);
+    animation: borderAnimation 2s infinite ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes borderAnimation {
+    50% {
+        border-color: lightskyblue;
+    }
+}
+
+.game-name, .label {
+    font-weight: 1000;
+    font-size: 30px;
+    color: var(--accent);
+    border-radius: 25px;
+    padding: 5px 25px;
+    stroke-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.label {
+    text-align: center;
+}
+
+.game-name:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    transition: 0.5s;
+    -webkit-text-stroke-color: var(--accent);
+}
+
+#game-name-deco {
+    transition: 0.35s;
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+    background: var(--accent);
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.menu-button {
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-weight: 1000;
+}
+
+.menu-button:hover {
+    color: white;
+    background: var(--accent) 15%;
+    height: 35px;
+    width: 160px;
+    transition: 0.3s;
+}
+
+#rules-menu {
+    position: absolute;
+    width: 450px;
+    height: fit-content;
+    padding: 15px 15px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid var(--accent);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 1000;
+    display: none;
+    transition: 0.5s;
+}
+
+#settings-menu {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 15px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid var(--accent);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 1000;
+    display: none;
+    transition: 0.5s;
+}
+
+#suggestions-state {
+    transition: 0.3s;
+}
+
+.state-label:hover {
+    background-color: var(--accent);
+    color: white;
+}
+.state-label {
+    height: fit-content;
+}
+
+#settings-accent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+#accent-colors {
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    display:flex;
+    padding: 0px 10px;
+    flex-wrap: wrap;
+    justify-content:safe;
+}
+
+
+.state-label {
+    margin-right: 10px;
+}
+
+.settings-section {
+    border: 2px solid var(--accent);
+    border-radius: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.accent-color {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    transition: 0.3s;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+#main-game {
+    width: 450px;
+    height: 450px;
+    border: 2px solid var(--accent);
+    border-radius: 40px;
+    position: absolute;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#maingame-score, #maingame-tries, #maingame-recordtries {
+    color: var(--accent);
+    font-weight: 1000;
+    margin: 0;
+}
+
+#guess-info {
+    font-weight: 1000;
+    color:  var(--accent);
+    margin: 0;
+    text-align: center;
+}
+
+#guess-input {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 180px;
+    margin: 10px;
+}
+
+#rules-topic {
+    margin: 0;
+}
+
+#rules-topic, #rules-content {
+    color: var(--accent);
+}
+
+#rules-content {
+    text-align: center;
+}

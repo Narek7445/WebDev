@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="main-menu">
+            <p class="game-name">Guess The Number</p>
+            <div id="game-name-deco"></div>
+            <button class="menu-button" id="menu-play-button">Play</button>
+            <button class="menu-button" id="menu-rules-button">Rules</button>
+            <button class="menu-button" id="menu-settings-button">Settings</button>
+            
+        </div>
+        <div id="main-game">
+            <p class="game-name">Guess The Number</p>
+            <p id="maingame-score" id="maingame-score">Score: x</p>
+            <p id="maingame-tries">Tries: x</p>
+            <p id="maingame-recordtries">Record Tries: x</p>
+            <p id="guess-info">Press launch button to start</p>
+            <input type="number" id="guess-input" min="0" max="100">
+            <button class="menu-button" id="maingame-try">Try</button>
+            <button class="menu-button" id="maingame-launch">Launch</button>
+            <button class="menu-button" id="maingame-returnhome">Main Menu</button>
+        </div>
+        <div id="rules-menu">
+            <p id="rules-topic">Rules</p>
+            <p id="rules-content">
+                Rules of this game are so easy! Computer takes in mind one random number in range from 1 to 100, and you have to guess it using as small amount of tries as possible!.
+            </p>
+            <button class="menu-button" id="rules-ok">OK</button>
+        </div>
+        <div id="settings-menu">
+            <p class="label">Settings</p>
+            <div id="settings-suggestions" class="settings-section">
+                <p class="label">Suggestions</p>
+                <p class="label state-label" style="font-size: 18px;" id="suggestions-state">Off</p>
+            </div>
+            <div id="settings-difficulty" class="settings-section">
+                <p class="label">Difficulty</p>
+                <p class="label state-label" style="font-size: 18px;" id="difficulty-state">Easy</p>
+            </div>
+            <div id="settings-accent" class="settings-section">
+                <p class="label">Accent</p>
+                <div id="accent-colors">
+                    <div class="accent-color" style="background: rgb(255, 0, 0);"></div>
+                    <div class="accent-color" style="background: rgb(245, 204, 118);"></div>
+                    <div class="accent-color" style="background: rgb(13, 153, 218);"></div>
+                    <div class="accent-color" style="border-color: lime; background: blueviolet;"></div>
+                    <div class="accent-color" style="background: rgb(132, 134, 134);"></div>
+                    <div class="accent-color" style="background: rgb(119, 52, 21);"></div>
+                    <div class="accent-color" style="background: rgb(107, 255, 97);"></div>
+                    <div class="accent-color" style="background: rgb(232, 235, 28);"></div>
+                    <div class="accent-color" style="background: rgb(236, 153, 20);"></div>
+                    <div class="accent-color" style="background: pink;"></div>
+                    
+                
+                </div>
+            </div>
+            <button class="menu-button" id="settings-returnhome">Main Menu</button>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
